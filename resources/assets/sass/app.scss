@@ -1,0 +1,66 @@
+
+// Fonts
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+body{
+  background: white;
+}
+h1{
+  color:#000000;
+}
+.table-striped > tbody > tr:nth-child(2n+1) > td{
+  background-color: #cccccc;
+}
+.table-striped > tbody > tr:nth-child(2n) > td{
+  background-color: #EEEEEE;
+}
+.table-striped > thead > tr > th{
+  background-color: #EEEEEE;
+}
+table {
+  margin-top: 15px;
+  width: 1000px;
+  max-width: 1000px;
+  table-layout: fixed;
+  border-collapse: collapse;
+
+  th, td {
+    padding: 5px;
+    text-align: left;
+  }
+
+  tr{
+    width: 1000px!important;
+  }
+
+  td:nth-child(1), th:nth-child(1) { min-width: 200px; }
+  td:nth-child(2), th:nth-child(2) { min-width: 200px; }
+  td:nth-child(3), th:nth-child(3) { min-width: 200px; }
+  td:nth-child(4), th:nth-child(4) { min-width: 200px; }
+  td:nth-child(5), th:nth-child(5) { min-width: 200px; }
+  thead {
+
+    tr {
+      display: block;
+      position: relative;
+    }
+  }
+  tbody {
+    display: block;
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 1000px;
+    height: 163px;
+  }
+}
+#search_contacts{
+  max-width: 1000px;
+}
+form{
+  max-width: 1000px;
+}
